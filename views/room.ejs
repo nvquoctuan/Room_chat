@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Chat app</title>
+        <script defer src = "http://localhost:8000/socket.io/socket.io.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script defer src = "client.js"></script>
+        <script>
+            const roomName = "<%= roomName %>";
+        </script>
+        <style>
+        #message-left{
+            float: left;
+            width: 50%;
+        }
+        #message-right{
+            float: left;
+            width: 50;
+        }
+        </style>
+    </head>
+    <body>
+        <div id = 'message-contanier'>
+            <div id = 'message-left'>
+                <div id = 'message-content'></div>
+                <form id = 'message-form'>
+                    <input id = 'message-input' name = 'message' />
+                    <button type = 'submit'>Submit</button>
+                </form>
+            </div>
+            <div id = 'message-right'>  </div>
+        </div>
+    </body>
+</html>

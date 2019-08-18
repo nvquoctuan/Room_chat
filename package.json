@@ -1,0 +1,16 @@
+{
+  "name": "chat-room",
+  "version": "1.0.0",
+  "description": "Chat in room",
+  "main": "server.js",
+  "scripts": {
+    "test": "Chat "
+  },
+  "author": "NVQUOCTUAN",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "socket.io": "^2.2.0"
+  }
+}
